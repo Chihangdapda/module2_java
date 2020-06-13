@@ -12,8 +12,8 @@ public class XoaPhanTuMang {
 
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 9 + 1);
-            System.out.print(array[i]);
+            array[i] = (int)(Math.random() * 9 + 1 );
+            System.out.print(array[i]+" ");
         }
         System.out.println("");
         int x;

@@ -21,12 +21,11 @@ public class ThemPtMang {
         System.out.println("nhap vi tri can chen trong mang:");
         index = sc.nextInt();
         if (index < array.length - 1){
-            for (int i = 0; i < array.length; i++) {
-                array[index]=array[index+1];
+            for (int i = array.length-1; i >= 0; i--) {
+                array[index]=array[index-1];
                 array[index] = x;
-                System.out.print(array[i]);
+                System.out.print(array[array.length -i -1]);
             }
-
         }else
             System.out.println("vuot qua, khong chen dc");
 
