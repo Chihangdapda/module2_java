@@ -37,3 +37,6 @@ public class Circle {
         return "The radius: " + getRadius()+" color: "+ getColor();
     }
 }
+class TestCircle{
+
+}

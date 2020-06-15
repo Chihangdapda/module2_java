@@ -1,8 +1,8 @@
 package CacDoiTuongHinhHoc;
 
 public class Shape {
-    private String color;
-    private boolean filled;
+     String color;
+     boolean filled;
 
     public Shape() {
     }
