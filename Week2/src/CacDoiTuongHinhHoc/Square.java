@@ -1,5 +1,7 @@
 package CacDoiTuongHinhHoc;
 
+import InterfaceResizeable.InterfaceResizeable;
+
 public class Square extends Rectangle {
     public Square() {
     }
@@ -14,8 +16,8 @@ public class Square extends Rectangle {
         return getWidth();
     }
     public void setSide(double side){
-        setWidth(side);
-        setHeight(side);
+        super.setHeight(side);
+        super.setWidth(side);
     }
 
 
@@ -27,6 +29,11 @@ public class Square extends Rectangle {
     @Override
     public void setHeight(double height) {
         super.setHeight(height);
+    }
+
+    @Override
+    public void resize(double percent) {
+        super.setWidth(getSide());
     }
 
     @Override

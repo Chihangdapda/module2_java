@@ -1,6 +1,8 @@
 package CacDoiTuongHinhHoc;
 
-public class Rectangle extends Shape {
+import InterfaceResizeable.InterfaceResizeable;
+
+public class Rectangle extends Shape implements InterfaceResizeable {
     private double width;
     private double height;
 
@@ -32,10 +34,21 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+    public double getArea(){
+        return width*height;
+    }
+
     @Override
     public String toString() {
-        return "A Rectangle with width = "+getWidth()+" and height= "+getHeight()+", wich is subclass of "+
+        return "A Rectangle with width = "+getWidth()+" and height= "+getHeight()+
+                " The Area ="+getArea()+", wich is subclass of "+
                 super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        setWidth(getWidth()*percent/100);
+        setHeight(getHeight()*percent/100);
     }
 }
 class RectangleTest{

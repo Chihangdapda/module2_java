@@ -1,5 +1,7 @@
 package CacDoiTuongHinhHoc;
 
+import InterfaceResizeable.InterfaceResizeable;
+
 public class Shape {
      String color;
      boolean filled;

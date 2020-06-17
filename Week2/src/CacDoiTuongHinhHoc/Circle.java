@@ -1,6 +1,8 @@
 package CacDoiTuongHinhHoc;
 
-public class Circle extends Shape {
+import InterfaceResizeable.InterfaceResizeable;
+
+public class Circle extends Shape implements InterfaceResizeable {
     private double radius;
     public Circle(){
     }
@@ -12,12 +14,13 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public double getRadius() {
+    public static double getRadius() {
         return radius;
     }
 
     public void setRadius(double radius) {
         this.radius = radius;
+
     }
 
     public double getArea(){
@@ -31,9 +34,16 @@ public class Circle extends Shape {
     public String toString() {
         return "A Circle with radius="
                 + getRadius()
-                + ", which is a subclass of "
+                + ", which is a subclass of "+ "area ="+getArea()
                 + super.toString();
     }
+
+    @Override
+    public void resize(double percent) {
+        setRadius(getRadius()*percent/100);
+    }
+
+
 }
 
 class CircleTest{

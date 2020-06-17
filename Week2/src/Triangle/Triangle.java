@@ -1,11 +1,11 @@
 package Triangle;
 
-import CacDoiTuongHinhHoc.Shape;
+import CacDoiTuongHinhHoc.Shape;//ten package tieng viet
 
 public class Triangle extends Shape {
     double side1 = 1.0;
     double side2 = 1.0;
-    double size3 = 1.0;
+    double size3 = 1.0;//dat ten bien sai lam
 
     public Triangle() {
     }
@@ -47,20 +47,22 @@ public class Triangle extends Shape {
     }
 
     public double getArea() {
-        double p = getPerimete() / 2;
+        double p = getPerimete() / 2;//tach bien
         return Math.sqrt(p * (p - side1) * (p - side2) * (p - size3));
+        //tach bien area =Math.sqrt(p * (p - side1) * (p - side2) * (p - size3))
     }
 
-    public double getPerimete() {
-        return (side1 + side2 + size3);
+    public double getPerimete() {//ten bien k co y nghia
+        return (side1 + side2 + size3);// tach bien Perimeter = (side1 + side2 + size3), k can ngoac"()"
     }
 
     @Override
     public String toString() {
 
-        return "side1= " + getSide1() + " side2: " + getSide2() + " side3: " + getSize3() + " Area: " + getArea() + " Perimete: " + getPerimete() +
+        return "side1= " + getSide1() + " side2: " + getSide2() +
+                " side3: " + getSize3() + " Area: " + getArea() + " Perimete: " + getPerimete() +
                 super.toString();
-    }
+    }//co the tach bien
 }
 
 class TriangleTest {
