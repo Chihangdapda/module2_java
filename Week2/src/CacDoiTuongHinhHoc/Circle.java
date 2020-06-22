@@ -1,9 +1,11 @@
 package CacDoiTuongHinhHoc;
 
+import InterfaceComparable.ComparableCircle;
 import InterfaceResizeable.InterfaceResizeable;
 
 public class Circle extends Shape implements InterfaceResizeable {
     private double radius;
+
     public Circle(){
     }
     public Circle(double radius){
@@ -14,7 +16,7 @@ public class Circle extends Shape implements InterfaceResizeable {
         this.radius = radius;
     }
 
-    public static double getRadius() {
+    public double getRadius() {
         return radius;
     }
 

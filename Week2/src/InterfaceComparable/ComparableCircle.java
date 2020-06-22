@@ -18,13 +18,11 @@ public class ComparableCircle extends Circle
 
     @Override
     public int compareTo(ComparableCircle o) {
-        if (Circle.getRadius() > o.getRadius()) return 1;
-        else if (Circle.getRadius() < o.getRadius()) return -1;
-        else return 1;
-    }
-
-    @Override
-    public int comparaTo(ComparableCircle o) {
+        if (getRadius()>o.getRadius()){
+            return 1;
+        } else if (getRadius()<o.getRadius()){
+            return -1;
+        } else
         return 0;
     }
 }

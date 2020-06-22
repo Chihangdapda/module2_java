@@ -1,8 +1,8 @@
 package CacDoiTuongHinhHoc;
 
-import InterfaceResizeable.InterfaceResizeable;
+import InterfaceColorable.Colorable;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Colorable {
     public Square() {
     }
     public Square(double side){
@@ -34,6 +34,11 @@ public class Square extends Rectangle {
     @Override
     public void resize(double percent) {
         super.setWidth(getSide());
+    }
+
+    @Override
+    public String howToColor() {
+        return "Color all four sides...";
     }
 
     @Override

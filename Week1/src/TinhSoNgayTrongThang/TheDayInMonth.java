@@ -26,6 +26,7 @@ public class TheDayInMonth {
             case 9:
             case 11:
                 System.out.println("thang " + Month + " co 30 ngay");
+                break;
             default:
                 System.out.println("nhap khong chinh xac");
         }
