@@ -5,16 +5,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person(1);
-        Person p2 = new Person(2);
-        Person p3 = new Person(3);
+        Person person = new Person(1,"Vinh");
+        Person person1 = new Person(2,"Nam");
+        Person person2 = new Person(3, "Linh");
 
         List<Person>listPerson = new ArrayList<>();
 
-        listPerson.add(p1);
-        listPerson.add(p2);
-        listPerson.add(p3);
-        listPerson.add(p3);
+        listPerson.add(person);
+        listPerson.add(person1);
+        listPerson.add(person2);
+
 
        /* Person p = listPerson.get(2);
         System.out.println(p.getId());
@@ -27,10 +27,10 @@ public class Main {
         for (int i =0;i<listPerson.size();i++){
             System.out.println(listPerson.get(i).getId());
         }*/
-    listPerson.remove(p1);
-        for (Person person : listPerson
+    listPerson.remove(person1);
+        for (Person p : listPerson
              ) {
-            System.out.println(person.getId());
+            System.out.println(p.getId());
         }
     }
 

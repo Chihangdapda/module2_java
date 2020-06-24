@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class VectorMain {
     public static void main(String[] args) {
-        Person p = new Person(1);
+        Person p = new Person(1,"Nam");
         List<Person> list = new Vector<Person>();
     }
 }

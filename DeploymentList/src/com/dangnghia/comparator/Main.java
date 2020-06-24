@@ -21,8 +21,20 @@ public class Main {
             System.out.println(p.getId()+p.getName());
         }
 
-        System.out.println("sau khi sap xep");
-        Collections.sort(list,new MyCompare());
+       /* list.sort(((o1, o2) -> (o1.getId() - o2.getId())));
+        for (Person p:list){
+            System.out.println(p.getName());*/
+        list.sort((o1, o2) -> (o1.getId() - o2.getId()));
+        for (Person p:list){
+            System.out.println(p.getId());
+        }
+
+
+
+       /* System.out.println("sau khi sap xep");
+        Collections.sort(list,new MyCompare());*/
+
+
            /* @Override
             public int compare(Person o1, Person o2) {
                 if (o1.getId()>o2.getId()){
@@ -33,10 +45,10 @@ public class Main {
                 return 0;
             }
         });*/
-        for (Person p :list
+       /* for (Person p :list
         ) {
             System.out.println(p.getId()+p.getName());
-        }
+        }*/
     }
 }
 class MyCompare implements Comparator<Person>{
