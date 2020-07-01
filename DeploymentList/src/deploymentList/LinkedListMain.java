@@ -20,12 +20,10 @@ public class LinkedListMain {
         }
 
         System.out.println("-------------");
-        System.out.println(  list.size());
+        System.out.println( list.size());
 
         System.out.println("sau khi them -------------");
          list.addFirst(new Person(7,"Tuan"));
-
-
 
         for (Person p:list
         ) {
@@ -34,10 +32,7 @@ public class LinkedListMain {
         System.out.println(list.getLast().getId());
         System.out.println(list.getLast().getName());
 
-
-
-
-       /* list.remove(0);
+        list.remove(0);
         for (Person p:list
         ) {
             System.out.println(p.getId());
@@ -48,6 +43,6 @@ public class LinkedListMain {
         for (Person p:list
         ) {
             System.out.println(p.getId());
-        }*/
+        }
     }
 }

@@ -40,8 +40,6 @@ public class Run {
                         System.out.println("Enter id:");
                         id = sc.nextInt();
                     } while (classManager.isExistId(id));
-
-
                     System.out.println("Enter Name:");
                     String name = sc.next();
                     System.out.println("Enter age:");
@@ -49,7 +47,6 @@ public class Run {
                     MyClass myClassAdd = new MyClass(id, name, age);
                     myClasses.add(myClassAdd);
                     System.out.printf("them thanh cong sinh vine moi: ID: %d. Name: %s. Age: %d. \n", id, name, age);
-
                     break;
 
                 case 3:

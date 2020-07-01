@@ -1,6 +1,6 @@
 package CacDoiTuongHinhHoc;
 
-import InterfaceComparable.ComparableCircle;
+
 import InterfaceResizeable.InterfaceResizeable;
 
 public class Circle extends Shape implements InterfaceResizeable {
